@@ -1,1 +1,1 @@
-# [fishuuui.github.io](fishuuui.github.io)
+# [Fishy Website](fishuuui.github.io)
