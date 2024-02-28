@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>hello</title>
+    </head>
+    <body>     
+        <iframe src="http://www.protware.com/default.htm" 
+        width=100% height=100% 
+        title="box"
+        allowfullscreen="true" 
+        style="border: 0; height: 100%; left: 0; position: absolute; top: 0; width: 100%;">
+        </iframe>
+    <script>
+        window.addEventListener('beforeunload', ev => {
+            ev.returnValue = 
+                'Are you sure you want to leave?';
+        });
+        const data = JSON.stringify({ action: 'close',
+         when: +new Date
+        });
+        window.addEventListener('beforeunload', ev => {
+            navigator.sendBeacon('/analytics', data);
+        });
+        const pendingOps = new Set();
+
+        function updatePage() {
+            const promise = fetch('/new-content');
+        
+        
+        pendingOps.add(promise);
+
+        const cleanup = 
+            () => pendingOps.delete(promise);
+        promise.then(cleanup).catch(cleanup);
+        }
+    </script>
+     
+    </body>
+</html>
