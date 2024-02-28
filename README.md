@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html>
   <body>
-    <a target="blank" href="fishuuui.github.io">fishuuui.github.io</a>
+    <a href="fishuuui.github.io" target="_blank">fishuuui.github.io</a>
   </body>
 </html>
