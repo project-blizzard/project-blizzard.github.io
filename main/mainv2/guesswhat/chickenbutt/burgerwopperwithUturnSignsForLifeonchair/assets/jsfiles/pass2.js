@@ -6,4 +6,5 @@ if (password==pass1) {
 }
 else {
     alert('Wrong, try again');
+    location.href = "https://fishuuui.github.io/main/mainv2/guesswhat/chickenbutt/burgerwopperwithUturnSignsForLifeonchair/"
 };
