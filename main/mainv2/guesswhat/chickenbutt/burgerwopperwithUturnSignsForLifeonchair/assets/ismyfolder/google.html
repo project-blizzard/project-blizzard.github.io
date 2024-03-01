@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html>
+<body>
+<script>
+window.addEventListener("beforeunload", function(event) {
+event.returnValue = "blah blah";
+});
+</script>
+
+</body>
+</html>
+
+<a href="index.html">Home</a>
+<iframe src="https://www.google.com?igu=1" width=1366 height=768>

@@ -1,0 +1,8 @@
+<script>
+var awesome
+awesome = window.open("https://classroom.google.com")
+awesome.addEventListener("beforeunload", function(event) {
+    event.returnValue = "hello"
+});
+awesome;
+</script>

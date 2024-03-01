@@ -1,0 +1,15 @@
+<body onbeforeunload="return superCool()">
+    <a href="blah" onClick="MyWindow=window.open('https://google.com','MyWindow','width=1280,height=720'); return false;">click heeya</a>
+    
+<script>
+    
+function superCool() {
+  return "I'm awesome";
+}
+var awesome = window.open("https://classroom.google.com")
+awesome.addEventListener("beforeunload", function(event) {
+    event.returnValue = "hello"
+});
+awesome.document.write("<p>This is my window.</p>");
+</script>
+</body>
