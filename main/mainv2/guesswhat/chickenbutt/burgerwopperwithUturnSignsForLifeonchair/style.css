@@ -2,7 +2,10 @@ body {
     text-align: center;
 }
 
-
+.dropdown-container {
+    display: inline-block; /* Make the container inline */
+    margin-right: 20px; /* Add some space between dropdowns */
+  }
 
 .dropdown { 
     display: inline-block; 
