@@ -127,4 +127,27 @@
       0 0 2px #00f;
   }
 
+  @keyframes glitch {
+    0% {
+      transform: none;
+    }
+    10% {
+      transform: skew(-5deg);
+    }
+    20% {
+      transform: skew(5deg);
+    }
+    30% {
+      transform: skew(-5deg);
+    }
+    40% {
+      transform: skew(0);
+    }
+    100% {
+      transform: none;
+    }
+  }
   
+  .glitchy-button {
+    animation: glitch 0.5s infinite;
+  }
