@@ -17,6 +17,43 @@
   </head>
   <body>
 
+    <style>
+      /* CSS for Basic Dropdown Structure */
+.dropdown {
+  background-color: orange;
+  color: white;
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: white;
+  min-width: 160px;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+  z-index: 1;
+  transition: all 0.3s ease;
+  transform-origin: top;
+  transform: scaleY(0);
+  opacity: 0;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+  transform: scaleY(1);
+  opacity: 1;
+}
+.dropdown-content a {
+  color: white;
+}
+
+.dropdown-content a:hover {
+  background-color: white;
+  color: orange;
+}
+    </style>
+
     <link rel="stylesheet" type="text/css" href="./style.css" />
     <script src="assets/jsfiles/unblocker.js"></script>
     <script defer data-domain="fishuuui.github.io/main/mainv2/guesswhat/chickenbutt/burgerwopperwithuturnsignsforlifeonchair" src="https://plausible.io/js/script.js"></script>
