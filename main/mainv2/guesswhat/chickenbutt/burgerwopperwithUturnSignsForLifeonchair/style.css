@@ -3,7 +3,6 @@ body {
     background-size: cover;
     background-attachment: fixed;
     animation: cityBackground 60s linear infinite;
-    text-align: center;
 }
 
 @keyframes cityBackground {
