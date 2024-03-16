@@ -132,13 +132,13 @@
       transform: none;
     }
     10% {
-      transform: skew(-5deg);
+      transform: skew(-10deg);
     }
     20% {
-      transform: skew(5deg);
+      transform: skew(10deg);
     }
     30% {
-      transform: skew(-5deg);
+      transform: skew(-10deg);
     }
     40% {
       transform: skew(0);
