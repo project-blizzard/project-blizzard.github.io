@@ -156,7 +156,7 @@
     border: none;
 }
 
-svg {
+.svg {
     fill: none;
     stroke: 2px;
     stroke-width: 6px;
@@ -165,7 +165,7 @@ svg {
     transition: all 800ms ease;
 }
 
-a {
+.a {
     position: absolute;
     inset: 25% 20%;
     text-decoration: none;
