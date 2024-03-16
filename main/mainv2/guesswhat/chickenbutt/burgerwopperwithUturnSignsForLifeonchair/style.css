@@ -55,7 +55,7 @@
 .dropdown-content a:hover {
     color: #FFFFFF;
     background-color: #00A4BD;
-    animation: glitchmore 1s infinite;
+    animation: glitchmore 4s infinite;
 }
 
 @keyframes glitchmore {
