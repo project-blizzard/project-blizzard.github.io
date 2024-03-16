@@ -164,35 +164,34 @@
     }
   }
   
-  .fish-button {
-    width: 100px;
-    height: 50px;
+  .button {
+    display: inline-block;
+    padding: 10px 20px;
     background-color: #3498db;
-    border-radius: 50px 50px 0 0;
+    color: #fff;
+    font-size: 16px;
+    text-transform: uppercase;
+    text-decoration: none;
+    border-radius: 5px;
+    overflow: hidden;
     position: relative;
-    animation: swim 2s infinite;
+    transition: all 0.3s;
   }
   
-  .fish-button::before {
+  .button::before {
     content: '';
+    background-color: rgba(255, 255, 255, 0.2);
     position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
     width: 0;
     height: 0;
-    border-top: 25px solid transparent;
-    border-bottom: 25px solid transparent;
-    border-left: 50px solid #3498db;
-    top: 0;
-    left: 100%;
+    border-radius: 50%;
+    transition: width 0.3s, height 0.3s;
   }
   
-  .fish-button::after {
-    content: '';
-    position: absolute;
-    width: 0;
-    height: 0;
-    border-top: 25px solid transparent;
-    border-bottom: 25px solid transparent;
-    border-right: 50px solid #3498db;
-    top: 0;
-    right: 100%;
+  .button:hover::before {
+    width: 300%;
+    height: 300%;
   }
