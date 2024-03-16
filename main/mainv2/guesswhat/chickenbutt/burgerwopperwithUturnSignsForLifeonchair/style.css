@@ -163,35 +163,64 @@
       transform: translateX(0);
     }
   }
-  
-  .button {
-    display: inline-block;
-    padding: 10px 20px;
-    background-color: #3498db;
-    color: #fff;
+
+  .glitch-button {
     font-size: 16px;
-    text-transform: uppercase;
-    text-decoration: none;
-    border-radius: 5px;
-    overflow: hidden;
+    font-weight: bold;
+    padding: 10px 20px;
+    background-color: black;
+    color: limegreen;
+    border: 2px solid limegreen;
     position: relative;
-    transition: all 0.3s;
+    overflow: hidden;
+    display: inline-block;
+    text-decoration: none;
+    transition: color 0.4s, border-color 0.4s;
   }
   
-  .button::before {
-    content: '';
-    background-color: rgba(255, 255, 255, 0.2);
+  .glitch-button::before,
+  .glitch-button::after {
+    content: attr(data-text);
     position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    width: 0;
-    height: 0;
-    border-radius: 50%;
-    transition: width 0.3s, height 0.3s;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    clip: rect(0, 100%, 0, 0);
   }
   
-  .button:hover::before {
-    width: 300%;
-    height: 300%;
+  .glitch-button::before {
+    color: #00ff00;
+    animation: noise-anim-1 2s infinite linear alternate-reverse;
+  }
+  
+  .glitch-button::after {
+    color: #ff00ff;
+    animation: noise-anim-2 2s infinite linear alternate-reverse;
+  }
+  
+  @keyframes noise-anim-1 {
+    0% {
+      clip: rect(82px, 9999px, 28px, 0);
+    }
+    5% {
+      clip: rect(48px, 9999px, 6px, 0);
+    }
+    10% {
+      clip: rect(74px, 9999px, 77px, 0);
+    }
+    /* Add more keyframes for glitch effect */
+  }
+  
+  @keyframes noise-anim-2 {
+    0% {
+      clip: rect(15px, 9999px, 69px, 0);
+    }
+    5% {
+      clip: rect(47px, 9999px, 47px, 0);
+    }
+    10% {
+      clip: rect(77px, 9999px, 15px, 0);
+    }
+    /* Add more keyframes for glitch effect */
   }
