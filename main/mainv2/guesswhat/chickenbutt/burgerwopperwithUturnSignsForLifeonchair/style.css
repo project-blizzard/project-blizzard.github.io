@@ -3,6 +3,24 @@
     background-color: lightgray;
 }
 
+@keyframes glitch {
+    0% {
+      transform: translate(0);
+    }
+    25% {
+      transform: translate(2px, -2px);
+    }
+    50% {
+      transform: translate(-2px, 2px);
+    }
+    75% {
+      transform: translate(2px, -2px);
+    }
+    100% {
+      transform: translate(0);
+    }
+  }
+
 .dropdown { 
     text-align: center;
   } 
@@ -30,4 +48,5 @@
 .dropdown-content a:hover {
     color: #FFFFFF;
     background-color: #00A4BD;
+    animation: glitch 0.5s infinite;
 }
