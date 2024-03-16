@@ -1,6 +1,14 @@
-.body {
+body {
+    background-image: url('night-city.jpg');
+    background-size: cover;
+    background-attachment: fixed;
+    animation: cityBackground 60s linear infinite;
     text-align: center;
-    background-color: lightgray;
+}
+
+@keyframes cityBackground {
+    0% { background-position: 0 0; }
+    100% { background-position: 100% 0; }
 }
 
 @keyframes glitch {
