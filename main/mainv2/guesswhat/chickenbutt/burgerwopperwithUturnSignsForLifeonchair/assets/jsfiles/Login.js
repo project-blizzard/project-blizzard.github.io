@@ -5,7 +5,7 @@ function checkUser(){
         location.href = "http://fishuuui.github.io/main/mainv2/guesswhat/chickenbutt/burgerwopperwithUturnSignsForLifeonchair/";
         }
       } else {
-      //alert('Wrong Password!');
+      alert('Wrong Password!');
        return false;
      }
 
