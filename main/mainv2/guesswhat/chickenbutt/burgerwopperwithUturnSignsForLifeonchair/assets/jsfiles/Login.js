@@ -7,7 +7,7 @@ function checkUser(){
        return false;
      }
     if(document.getElementById('username').value == 'crit'){
-        location.href = " https://fishuuui.github.io/main";
+        location.href = "http://fishuuui.github.io/main/mainv2/guesswhat/chickenbutt/burgerwopperwithUturnSignsForLifeonchair/";
     } else {
         return false;
     }
