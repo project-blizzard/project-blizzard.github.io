@@ -17,4 +17,10 @@ function checkUser(){
         //alert('Wrong Passcode or Username');
         return false;
     }
+
+    if(document.getElementById('username').value == 'gecko'){
+        if(document.getElementById('passcode').value == 'gecko'){
+            location.href = "http://fishuuui.github.io/main/mainv2/guesswhat/chickenbutt/burgerwopperwithUturnSignsForLifeonchair/";
+        }
+    }
 }
