@@ -9,8 +9,8 @@ function checkUser(){
        return false;
      }
 
-    if(document.getElementById('username').value == 'crit'){
-      if(document.getElementById('passcode').value == 'crit'){
+    if(document.getElementById('username').value == 'chris'){
+      if(document.getElementById('passcode').value == 'chris'){
         location.href = "http://fishuuui.github.io/main/mainv2/guesswhat/chickenbutt/burgerwopperwithUturnSignsForLifeonchair/";
         }
     } else {
