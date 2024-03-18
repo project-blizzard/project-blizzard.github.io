@@ -4,25 +4,25 @@ function checkUser(){
        if(document.getElementById('passcode').value == 'fish'){
         location.href = "http://fishuuui.github.io/main/mainv2/guesswhat/chickenbutt/burgerwopperwithUturnSignsForLifeonchair/";
         }
-      } else {
+        else {
       //alert('Wrong Passcode or Username');
        return false;
      }
+    }
 
     if(document.getElementById('username').value == 'chris'){
       if(document.getElementById('passcode').value == 'chris'){
-        location.href = "http://fishuuui.github.io/main/mainv2/guesswhat/chickenbutt/burgerwopperwithUturnSignsForLifeonchair/";
-        }
-    } else {
+        window.location.href = "http://fishuuui.github.io/main/mainv2/guesswhat/chickenbutt/burgerwopperwithUturnSignsForLifeonchair/";
+        } else {
         //alert('Wrong Passcode or Username');
         return false;
+        }
     }
-
     if(document.getElementById('username').value == 'gecko'){
         if(document.getElementById('passcode').value == 'gecko'){
             location.href = "http://fishuuui.github.io/main/mainv2/guesswhat/chickenbutt/burgerwopperwithUturnSignsForLifeonchair/";
-        }
-    } else {
+        } else {
         return false;
+    }
     }
 }
