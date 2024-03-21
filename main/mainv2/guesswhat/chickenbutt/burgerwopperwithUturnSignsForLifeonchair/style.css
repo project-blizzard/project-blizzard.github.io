@@ -1,9 +1,7 @@
-.body {
-    background-image: url('night-city.jpg');
-    background-size: cover;
-    background-attachment: fixed;
-    animation: cityBackground 60s linear infinite;
-}
+body {
+   background-image:url('assets/imgs/Blizzard.gif');
+    background-repeat:repeat; 
+  }
 
 @keyframes cityBackground {
     0% { background-position: 0 0; }
