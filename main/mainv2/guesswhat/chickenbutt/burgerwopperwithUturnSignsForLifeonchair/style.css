@@ -1,6 +1,7 @@
-body {
-   background-image:url('assets/imgs/Blizzard.gif');
-  }
+img.animated-gif{
+  width: 100%;
+  height: auto;
+}
 
 @keyframes cityBackground {
     0% { background-position: 0 0; }
