@@ -22,6 +22,7 @@ function checkUser(){
         if(document.getElementById('passcode').value == 'gecko'){
             location.href = "http://project-blizzard.github.io/main/mainv2/guesswhat/chickenbutt/burgerwopperwithUturnSignsForLifeonchair/";
         } else {
+        //alert{'Wrong Passcode or Username'};
         return false;
     }
     }
