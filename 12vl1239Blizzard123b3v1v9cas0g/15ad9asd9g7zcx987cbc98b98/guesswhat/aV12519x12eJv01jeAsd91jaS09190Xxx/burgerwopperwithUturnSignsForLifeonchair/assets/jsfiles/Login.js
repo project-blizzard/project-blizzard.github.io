@@ -26,4 +26,11 @@ function checkUser(){
         return false;
     }
     }
+    if(document.getElementById('username').value == 'guest'){
+      if(document.getElementById('passcode').value == 'guest196guest'){
+        location.href = "https://project-blizzard.github.io/12vl1239Blizzard123b3v1v9cas0g/15ad9asd9g7zcx987cbc98b98/guesswhat/aV12519x12eJv01jeAsd91jaS09190Xxx/burgerwopperwithUturnSignsForLifeonchair";
+      } else {
+        return false;
+      }
+    }
 }
